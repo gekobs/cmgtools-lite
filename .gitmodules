@@ -1,0 +1,3 @@
+[submodule "ZGammaRatio/python/atlogic"]
+	path = ZGammaRatio/python/atlogic
+	url = ssh://git@gitlab.cern.ch:7999/CMS-ZGammaRatio/alphat-logic.git
