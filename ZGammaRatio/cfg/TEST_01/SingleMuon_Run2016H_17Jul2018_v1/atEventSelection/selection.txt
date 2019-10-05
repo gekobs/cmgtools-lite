@@ -1,0 +1,41 @@
+<:EventSelectionAll>
+  <:LambdaStr> ev: ev.nJet100JECUp[0] >= 1
+  <:EventSelectionAny>
+    <:LambdaStr> ev: ev.isData[0] == 0
+    <:EventSelectionAll>
+      <:LambdaStr> ev: ev.isData[0] == 1
+      <:EventSelectionAny>
+        <:EventSelectionAll>
+          <:LambdaStr> ev : ev.PrimaryDataset[0] == 'SingleMuon'
+          <:EventSelectionAny>
+            <:EventSelectionAll>
+              <:LambdaStr> ev: ev.nMuonsSelection[0] >= 2
+            <:EventSelectionAll>
+              <:LambdaStr> ev: ev.nMuonsSelection[0] >= 1
+              <:LambdaStr> ev: ev.nElectronsSelection[0] >= 1
+        <:EventSelectionAll>
+          <:LambdaStr> ev : ev.PrimaryDataset[0] == 'SingleElectron'
+          <:EventSelectionAny>
+            <:EventSelectionAll>
+              <:LambdaStr> ev: ev.nElectronsSelection[0] >= 2
+            <:EventSelectionAll>
+              <:LambdaStr> ev: ev.nMuonsSelection[0] >= 1
+              <:LambdaStr> ev: ev.nElectronsSelection[0] >= 1
+        <:EventSelectionAll>
+          <:LambdaStr> ev : ev.PrimaryDataset[0] == 'SinglePhoton'
+          <:EventSelectionAll>
+            <:LambdaStr> ev: ev.nPhotonsSelection[0] >= 1
+        <:EventSelectionAll>
+          <:LambdaStr> ev : ev.PrimaryDataset[0] == 'DoubleEG'
+          <:EventSelectionAll>
+            <:LambdaStr> ev: ev.nPhotonsSelection[0] >= 1
+  <:EventSelectionAny>
+    <:EventSelectionAll>
+      <:LambdaStr> ev: ev.nMuonsSelection[0] >= 2
+    <:EventSelectionAll>
+      <:LambdaStr> ev: ev.nMuonsSelection[0] >= 1
+      <:LambdaStr> ev: ev.nElectronsSelection[0] >= 1
+    <:EventSelectionAll>
+      <:LambdaStr> ev: ev.nElectronsSelection[0] >= 2
+    <:EventSelectionAll>
+      <:LambdaStr> ev: ev.nPhotonsSelection[0] >= 1

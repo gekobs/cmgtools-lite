@@ -1,0 +1,5 @@
+Counter events :
+	 all events                                   10000 	 1.00 	 1.0000
+	 pass trigger                                  8894 	 0.89 	 0.8894
+	 pass veto                                     8894 	 1.00 	 0.8894
+

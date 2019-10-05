@@ -1,0 +1,6 @@
+Counter events :
+	 all events                                    8894 	 1.00 	 1.0000
+	 has >=1 tau at preselection                   7878 	 0.89 	 0.8858
+	 has >=1 selected taus                          604 	 0.08 	 0.0679
+	 has >=1 other taus                            7523 	 12.46 	 0.8459
+
