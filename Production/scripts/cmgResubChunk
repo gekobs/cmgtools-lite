@@ -30,8 +30,14 @@ rename condor_job OLD_condor_job *;
 test -f submission_failed && rm submission_failed
 
 if [ "$Q" != "HTCondor" ]; then
-    echo "Resubmitting using LXBatch on queue $Q"
-    bsub -q $Q -J $LAB < batchScript.sh
+    if [ "$HOSTNAME" == "lx00.hep.ph.ic.ac.uk" ] || [ "$HOSTNAME" == "lx01.hep.ph.ic.ac.uk" ]; then
+      rm -r Loop; qsub -q $Q -o $PWD -e $PWD -N ${PWD##*/} batchScript.sh;
+    elif [ "$HOSTNAME" == "soolin.dice.priv" ]; then
+        run_condor.sh batchScript.sh
+    else
+      echo "Resubmitting using LXBatch on queue $Q"
+      bsub -q $Q -J $LAB < batchScript.sh;
+    fi   
 else 
     if $HAST; then
         if [ -f ../src.tar.gz ]; then
