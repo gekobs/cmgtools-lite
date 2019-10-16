@@ -10,11 +10,18 @@ logging.basicConfig( level = logging.WARNING )
 import CMGTools.ZGammaRatio.components.components_MC_SM_Summer16 as cmps
 
 componentList = []
-componentList.extend(cmps.componentList_G1Jet)
+
+componentList.extend(cmps.componentList_TTJets)
+componentList.extend(cmps.componentList_SingleTop)
+componentList.extend(cmps.componentList_WJets)
+componentList.extend(cmps.componentList_DYJets)
 componentList.extend(cmps.componentList_GJets)
+componentList.extend(cmps.componentList_G1Jet)
 componentList.extend(cmps.componentList_VGamma)
-componentList.extend(cmps.componentList_QCD )
+componentList.extend(cmps.componentList_QCD)
+componentList.extend(cmps.componentList_DiBoson)
 componentList.extend(cmps.componentList_TTX)
+componentList.extend(cmps.componentList_EWKV2Jets)
 
 ##__________________________________________________________________||
 from CMGTools.ZGammaRatio.components.ComponentCreator import ComponentCreator
