@@ -685,13 +685,13 @@ WJetsToLNu_Wpt400to600_amcatnloFXFX_ext1 = dict(
     user = "CMS", pattern = ".*root",
     )
 
-WJetsToLNu_Wpt600ToInf_amcatnloFXFX = dict(
+WJetsToLNu_Wpt600toInf_amcatnloFXFX = dict(
     name = "WJetsToLNu_Wpt600toInf_amcatnloFXFX",
     dataset = "/WJetsToLNu_Pt-600ToInf_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v2/MINIAODSIM",
     user = "CMS", pattern = ".*root",
     )
 
-WJetsToLNu_Wpt600ToInf_amcatnloFXFX_ext1 = dict(
+WJetsToLNu_Wpt600toInf_amcatnloFXFX_ext1 = dict(
     name = "WJetsToLNu_Wpt600toInf_amcatnloFXFX_ext1",
     dataset = "/WJetsToLNu_Pt-600ToInf_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext1-v2/MINIAODSIM",
     user = "CMS", pattern = ".*root",
@@ -733,8 +733,8 @@ dataset = "/ZZ_TuneCUETP8M1_13TeV-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X
 user = "CMS", pattern = ".*root",
 )
 
-Diboson_ZZ_pythia8 = dict(
-name = "Diboson_WZ_pythia8",
+Diboson_ZZ_pythia8_ext1 = dict(
+name = "Diboson_WZ_pythia8_ext1",
 dataset = "/ZZ_TuneCUETP8M1_13TeV-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext1-v2/MINIAODSIM",
 user = "CMS", pattern = ".*root",
 )

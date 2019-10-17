@@ -3,14 +3,14 @@ import os
 
 ##__________________________________________________________________||
 maxEvents = -1
-GT = '74X_dataRun2_Prompt_v2'
-jecEra='Summer15_25nsV6_DATA'
+GT = '94X_dataRun2_v10'
+jecEra='Summer16_07Aug2017All_V11_DATA'
 jecDBFile ='$CMSSW_BASE/src/CMGTools/RootTools/data/jec/' + jecEra + '.db'
 uncFile = '$CMSSW_BASE/src/CMGTools/RootTools/data/jec/' + jecEra + '_UncertaintySources_AK4PFchs.txt'
 
 isData = True
 removeResiduals = False
-json = '$CMSSW_BASE/src/CMGTools/TTHAnalysis/data/json/json_DCSONLY.txt'
+json = '$CMSSW_BASE/src/CMGTools/ZGammaRatio/data/json/Cert_271036-284044_13TeV_23Sep2016ReReco_Collisions16_JSON.txt'
 
 usePrivateSQlite = True if jecDBFile else False
 
@@ -109,6 +109,7 @@ process.HLTpaths = hltHighLevel.clone(
         "HLT_IsoMu24_eta2p1_v*", # SingleMuon
         "HLT_Mu24_v*", # SingleMuon
         "HLT_TkMu24_v*", # SingleMuon
+        "HLT_Mu50_v*", # SingleMuon
         "HLT_Ele22_WPLoose_Gsf_v*", # SingleElectron
         "HLT_Ele23_WPLoose_Gsf_v*", # SingleElectron
         "HLT_Ele27_eta2p1_WPLoose_Gsf_v*", # SingleElectron

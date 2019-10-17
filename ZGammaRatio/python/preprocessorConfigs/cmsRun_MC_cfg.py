@@ -3,8 +3,8 @@ import os
 
 ##__________________________________________________________________||
 maxEvents = -1
-GT = 'MCRUN2_74_V9'
-jecEra='Summer15_25nsV6_MC'
+GT = '94X_mcRun2_asymptotic_v3'
+jecEra='Summer16_07Aug2017_V11_MC'
 jecDBFile ='$CMSSW_BASE/src/CMGTools/RootTools/data/jec/' + jecEra + '.db'
 uncFile = '$CMSSW_BASE/src/CMGTools/RootTools/data/jec/' + jecEra + '_UncertaintySources_AK4PFchs.txt'
 
