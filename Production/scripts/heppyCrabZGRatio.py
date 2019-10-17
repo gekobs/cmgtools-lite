@@ -62,7 +62,7 @@ if __name__ == "__main__":
     os.environ["OUTSITE"] = options.storageSite
     os.environ["LABEL"] = options.cutFlow
     if options.label: os.environ["LABEL"] += "_"+options.label
-    os.environ["CMG_VERSION"] = "80X"
+    os.environ["CMG_VERSION"] = "94X"
     #os.environ["FILESTOUNPACK"] = "treeProducerSusyAlphaT/tree.root"
     if len(options.filesToShip)>0:
         os.environ["FILESTOSHIP"] = ','.join(options.filesToShip)
