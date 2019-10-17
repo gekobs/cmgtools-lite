@@ -21,7 +21,7 @@ def parse_args():
                         "reading from EOS via AAA)")
     parser.add_argument('-d', '--outDir', dest="outputDir", default="heppyFlatTrees",
                         help="Name of the directory where the files will be "
-                        "staged out: /store/user/$USER/$outputDir/80X/$label/"
+                        "staged out: /store/user/$USER/$outputDir/94X/$label/"
                         "dataset/$date_$time/0000/foo.bar")
     parser.add_argument('-l', '--label', default=None,
                         help="Heppy crab production label")
