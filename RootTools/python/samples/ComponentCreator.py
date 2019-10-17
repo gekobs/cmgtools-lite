@@ -9,7 +9,7 @@ class ComponentCreator(object):
          component = cfg.MCComponent(
              dataset=dataset,
              name = name,
-             files = self.getFiles(dataset,user,pattern,useAAA=useAAA,unsafe=unsafe),
+             files = self.getFiles(dataset,user,pattern,useAAA=useAAA),
              xSection = xSec,
              nGenEvents = 1,
              triggers = [],
