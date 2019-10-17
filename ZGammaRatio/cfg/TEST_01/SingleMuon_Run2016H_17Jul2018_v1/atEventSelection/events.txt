@@ -1,4 +1,0 @@
-Counter events :
-	 all                                           8894 	 1.00 	 1.0000
-	 passed                                          15 	 0.00 	 0.0017
-
