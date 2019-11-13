@@ -8,8 +8,8 @@ process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 # define your favorite global tag (newer GTs in condDBv2)
 from Configuration.AlCa.GlobalTag_condDBv2 import GlobalTag as customiseGlobalTag
 
-process.GlobalTag = customiseGlobalTag(process.GlobalTag, globaltag = '76X_mcRun2_asymptotic_v12')
-#process.GlobalTag = customiseGlobalTag(process.GlobalTag, globaltag = '76X_dataRun2_v15')
+process.GlobalTag = customiseGlobalTag(process.GlobalTag, globaltag = '94X_mcRun2_asymptotic_v3')
+#process.GlobalTag = customiseGlobalTag(process.GlobalTag, globaltag = '94X_dataRun2_v10')
 process.GlobalTag.connect   = 'frontier://FrontierProd/CMS_CONDITIONS'
 process.GlobalTag.pfnPrefix = cms.untracked.string('frontier://FrontierProd/')
 

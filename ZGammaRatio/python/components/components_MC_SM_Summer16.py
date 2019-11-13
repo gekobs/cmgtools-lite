@@ -83,8 +83,8 @@ dataset = "/DYJetsToLL_Pt-100To250_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunII
 user = "CMS", pattern = ".*root",
 )
 
-DYJetsToLL_Zpt100to250_amcatnloFXFX = dict(
-name = "DYJetsToLL_Zpt100to250_amcatnloFXFX",
+DYJetsToLL_Zpt100to250_amcatnloFXFX_ext5 = dict(
+name = "DYJetsToLL_Zpt100to250_amcatnloFXFX_ext5",
 dataset = "/DYJetsToLL_Pt-100To250_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext5-v2/MINIAODSIM",
 user = "CMS", pattern = ".*root",
 )
@@ -107,8 +107,8 @@ dataset = "/DYJetsToLL_Pt-250To400_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunII
 user = "CMS", pattern = ".*root",
 )
 
-DYJetsToLL_Zpt250to400_amcatnloFXFX = dict(
-name = "DYJetsToLL_Zpt250to400_amcatnloFXFX",
+DYJetsToLL_Zpt250to400_amcatnloFXFX_ext5 = dict(
+name = "DYJetsToLL_Zpt250to400_amcatnloFXFX_ext5",
 dataset = "/DYJetsToLL_Pt-250To400_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext5-v2/MINIAODSIM",
 user = "CMS", pattern = ".*root",
 )

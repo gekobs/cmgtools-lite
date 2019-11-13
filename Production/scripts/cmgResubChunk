@@ -31,7 +31,7 @@ test -f submission_failed && rm submission_failed
 
 if [ "$Q" != "HTCondor" ]; then
     if [ "$HOSTNAME" == "lx00.hep.ph.ic.ac.uk" ] || [ "$HOSTNAME" == "lx01.hep.ph.ic.ac.uk" ]; then
-      rm -r Loop; qsub -q $Q -o $PWD -e $PWD -N ${PWD##*/} batchScript.sh;
+      rm -r Loop; qsub -o $PWD -e $PWD -N ${PWD##*/} batchScript.sh;
     elif [ "$HOSTNAME" == "soolin.dice.priv" ]; then
         run_condor.sh batchScript.sh
     else

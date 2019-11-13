@@ -291,14 +291,13 @@ jetAna = cfg.Analyzer(
     recalibrateJets = True, #'MC', # True, False, 'MC', 'Data'
     applyL2L3Residual = True, # Switch to 'Data' when they will become available for Data
     recalibrationType = "AK4PFchs",
-    mcGT = "Summer16_23Sep2016V3_MC",
+    mcGT = "Summer16_07Aug2017_V11_MC",
     dataGT = [
-        (1,      "Summer16_23Sep2016BCDV3_DATA"),
-        (276831, "Summer16_23Sep2016EFV3_DATA"),
-        (278802, "Summer16_23Sep2016GV3_DATA"),
-        (280919, "Summer16_23Sep2016HV3_DATA"),
+        (1,      "Summer16_07Aug2017BCD_V11_DATA"),
+        (276831, "Summer16_07Aug2017EF_V11_DATA"),
+        (278802, "Summer16_07Aug2017GH_V11_DATA"),
         ],
-    jecPath = "${CMSSW_BASE}/src/CMGTools/RootTools/data/jec/",
+    jecPath = "${CMSSW_BASE}/src/CMGTools/RootTools/data/jec",
     shiftJEC = 0, # set to +1 or -1 to apply +/-1 sigma shift to the nominal jet energies
     addJECShifts = True, # if true, add  "corr", "corrJECUp", and "corrJECDown" for each jet (requires uncertainties to be available!)
     jetPtOrUpOrDnSelection = False, # if true, apply pt cut on the maximum among central, JECUp and JECDown values of corrected pt
