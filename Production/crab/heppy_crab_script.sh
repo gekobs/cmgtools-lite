@@ -1,17 +1,17 @@
 # uncomment for debuging purposes
-#ls -lR .
-#echo "ARGS:"
-#echo $@
-#echo "ENV..................................."
-#env
-#echo "VOMS"
-#voms-proxy-info -all
-#echo "CMSSW BASE, python path, pwd, home"
-#echo $CMSSW_BASE
-#echo $PYTHONPATH
-#echo $PWD
-#echo $HOME
-#echo $ROOTSYS
+ls -lR .
+echo "ARGS:"
+echo $@
+echo "ENV..................................."
+env
+echo "VOMS"
+voms-proxy-info -all
+echo "CMSSW BASE, python path, pwd, home"
+echo $CMSSW_BASE
+echo $PYTHONPATH
+echo $PWD
+echo $HOME
+echo $ROOTSYS
 
 # extract exported necessary stuff
 tar xzf cmgdataset.tar.gz --directory $HOME

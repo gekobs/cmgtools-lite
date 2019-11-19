@@ -18,6 +18,6 @@ config.JobType.inputFiles = [os.path.join(cmssw, 'src/CMGTools/Production/crab/{
 config.JobType.outputFiles = []
 
 config.Data.inputDBS = 'global'
-config.Data.splitting = 'EventBased'
+config.Data.splitting ='EventBased' #'Automatic'
 config.Data.outLFNDirBase = '/store/user/%s/' % (getUsernameFromSiteDB())
 config.Data.publication = False

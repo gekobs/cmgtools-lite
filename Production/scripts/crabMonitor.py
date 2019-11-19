@@ -38,7 +38,7 @@ def checkStatusTask(task, types):
     jobInfos["increase_wall_time"] = False
 
     for line in log.splitlines():
-        if "failed with exit code 50664" in line:
+        if "failed with exit code 50664" in line:   
             jobInfos["increase_wall_time"] = True
 
         if " SUBMITFAILED" in line:
@@ -57,8 +57,9 @@ def checkStatusTask(task, types):
         if "timed out" in line: #error of communication, bypass
             return None
 
-        if len(line.split("("))>1 and "/" in line:
+        if len(line.split("("))>1 and "/" in line and "Warning" not in line:
             tmp = line.split("(")[1][:-1]
+            print "\n\n tmp : ",tmp
             nJobs = int(tmp.split("/")[0])
             jobInfos["total"] = int(tmp.split("/")[1])
 
