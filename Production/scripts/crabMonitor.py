@@ -59,7 +59,7 @@ def checkStatusTask(task, types):
 
         if len(line.split("("))>1 and "/" in line and "Warning" not in line:
             tmp = line.split("(")[1][:-1]
-            print "\n\n tmp : ",tmp
+            # print "\n\n tmp : ",tmp
             nJobs = int(tmp.split("/")[0])
             jobInfos["total"] = int(tmp.split("/")[1])
 

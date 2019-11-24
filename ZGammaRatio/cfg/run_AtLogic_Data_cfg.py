@@ -13,15 +13,23 @@ componentList =  [ ]
 
 # 94X Legacy re-miniAOD
 
-componentList.extend(cmps.componentList_Run2016B_17Jul2018_v1)
-componentList.extend(cmps.componentList_Run2016B_17Jul2018_v2)
-componentList.extend(cmps.componentList_Run2016C_17Jul2018_v1)
-componentList.extend(cmps.componentList_Run2016D_17Jul2018_v1)
-componentList.extend(cmps.componentList_Run2016E_17Jul2018_v1)
-componentList.extend(cmps.componentList_Run2016F_17Jul2018_v1)
-componentList.extend(cmps.componentList_Run2016G_17Jul2018_v1)
-componentList.extend(cmps.componentList_Run2016H_17Jul2018_v1)
+# componentList.extend(cmps.componentList_Run2016B_17Jul2018_v1)
+# componentList.extend(cmps.componentList_Run2016B_17Jul2018_v2)
+# componentList.extend(cmps.componentList_Run2016C_17Jul2018_v1)
+# componentList.extend(cmps.componentList_Run2016D_17Jul2018_v1)
+# componentList.extend(cmps.componentList_Run2016E_17Jul2018_v1)
+# componentList.extend(cmps.componentList_Run2016F_17Jul2018_v1)
+# componentList.extend(cmps.componentList_Run2016G_17Jul2018_v1)
+# componentList.extend(cmps.componentList_Run2016H_17Jul2018_v1)
 
+componentList.append(cmps.SinglePhoton_Run2016B_17Jul2018_v1)
+componentList.append(cmps.SinglePhoton_Run2016B_17Jul2018_v2)
+componentList.append(cmps.SinglePhoton_Run2016C_17Jul2018_v1)
+componentList.append(cmps.SinglePhoton_Run2016D_17Jul2018_v1)
+componentList.append(cmps.SinglePhoton_Run2016E_17Jul2018_v1)
+componentList.append(cmps.SinglePhoton_Run2016F_17Jul2018_v1)
+componentList.append(cmps.SinglePhoton_Run2016G_17Jul2018_v1)
+componentList.append(cmps.SinglePhoton_Run2016H_17Jul2018_v1)
 
 ##__________________________________________________________________||
 from CMGTools.ZGammaRatio.components.ComponentCreator import ComponentCreator
