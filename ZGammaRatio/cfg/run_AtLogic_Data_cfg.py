@@ -44,7 +44,7 @@ for comp in components:
 from PhysicsTools.HeppyCore.framework.heppy_loop import getHeppyOption
 test = getHeppyOption('test')
 if test == "1" :
-    componentList = [cmps.SingleMuon_Run2016H_17Jul2018_v1]
+    componentList = [cmps.SinglePhoton_Run2016H_17Jul2018_v1]
     components = [kreator.makeDataComponent(**s) for s in componentList]
     for comp in components:
         comp.files[:] = comp.files[15:16]

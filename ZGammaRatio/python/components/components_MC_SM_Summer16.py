@@ -2,6 +2,25 @@
 ##____________________________________________________________________________||
 ## DYJets
 
+# Inclusive LO
+DYJetsToLL_M50_madgraphMLM_herwigpp = dict(
+name = "DYJetsToLL_M50_madgraphMLM",
+dataset="/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-herwigpp_30M/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
+
+DYJetsToLL_M50_madgraphMLM_ext1 = dict(
+name = "DYJetsToLL_M50_madgraphMLM",
+dataset="/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext1-v2/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
+
+DYJetsToLL_M50_madgraphMLM_ext2 = dict(
+name = "DYJetsToLL_M50_madgraphMLM",
+dataset = "/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext2-v2/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
+
 # Inclusive NLO
 DYJetsToLL_M50_amcatnloFXFX = dict(
 name = "DYJetsToLL_M50_amcatnloFXFX",
@@ -872,6 +891,10 @@ user = "CMS", pattern = ".*root",
 ## ComponentLists
 
 componentList_DYJets = [
+    # LO inclusive
+    DYJetsToLL_M50_madgraphMLM_herwigpp,
+    DYJetsToLL_M50_madgraphMLM_ext1,
+    DYJetsToLL_M50_madgraphMLM_ext2,
     # LO HT
     DYJetsToLL_HT70to100_madgraphMLM,
     DYJetsToLL_HT100to200_madgraphMLM,
@@ -1062,9 +1085,9 @@ if __name__ == "__main__":
     componentList.extend(componentList_SingleTop)
     componentList.extend(componentList_WJets)
     componentList.extend(componentList_DYJets)
-    componentList.append(componentList_GJets)
-    componentList.append(componentList_G1Jet)
-    componentList.append(componentList_VGamma)
+    componentList.extend(componentList_GJets)
+    componentList.extend(componentList_G1Jet)
+    componentList.extend(componentList_VGamma)
     componentList.extend(componentList_QCD)
     componentList.extend(componentList_DiBoson)
     componentList.extend(componentList_TTX)

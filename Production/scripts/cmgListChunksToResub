@@ -10,7 +10,7 @@ eval set -- "$OPTS"
 HELP=false
 TERSE=/bin/false
 LSFL=false
-F=JSONAnalyzer/JSON.pck
+F=jsonAnalyzer/JSON.pck
 LOC=false
 P=false
 Q=""
