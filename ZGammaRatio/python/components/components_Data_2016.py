@@ -37,9 +37,9 @@ triggers_zeroBias       = ["HLT_ZeroBias_v"]
 
 ##__________________________________________________________________||
 ## Run2016B
-SingleMuon_Run2016B_17Jul2018_v1     = dict(name = "SingleMuon_Run2016B_17Jul2018_v1"    ,dataset = "/SingleMuon/Run2016B-17Jul2018_ver1-v1/MINIAOD"    , json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root")
-SinglePhoton_Run2016B_17Jul2018_v1   = dict(name = "SinglePhoton_Run2016B_17Jul2018_v1"  ,dataset = "/SinglePhoton/Run2016B-17Jul2018_ver1-v1/MINIAOD"  , json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root")
-SingleElectron_Run2016B_17Jul2018_v1 = dict(name = "SingleElectron_Run2016B_17Jul2018_v1",dataset = "/SingleElectron/Run2016B-17Jul2018_ver1-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root")
+SingleMuon_Run2016B_17Jul2018_v1     = dict(name = "SingleMuon_Run2016B_17Jul2018_v1"    ,dataset = "/SingleMuon/Run2016B-17Jul2018_ver1-v1/MINIAOD"    , json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root", useAAA=True)
+SinglePhoton_Run2016B_17Jul2018_v1   = dict(name = "SinglePhoton_Run2016B_17Jul2018_v1"  ,dataset = "/SinglePhoton/Run2016B-17Jul2018_ver1-v1/MINIAOD"  , json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root", useAAA=True)
+SingleElectron_Run2016B_17Jul2018_v1 = dict(name = "SingleElectron_Run2016B_17Jul2018_v1",dataset = "/SingleElectron/Run2016B-17Jul2018_ver1-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root", useAAA=True)
 
 componentList_Run2016B_17Jul2018_v1 = [
         SingleMuon_Run2016B_17Jul2018_v1,
@@ -47,9 +47,9 @@ componentList_Run2016B_17Jul2018_v1 = [
         SingleElectron_Run2016B_17Jul2018_v1,
         ]
 
-SingleMuon_Run2016B_17Jul2018_v2     = dict(name = "SingleMuon_Run2016B_17Jul2018_v2"    ,dataset = "/SingleMuon/Run2016B-17Jul2018_ver2-v1/MINIAOD"    ,json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root")
-SinglePhoton_Run2016B_17Jul2018_v2   = dict(name = "SinglePhoton_Run2016B_17Jul2018_v2"  ,dataset = "/SinglePhoton/Run2016B-17Jul2018_ver2-v1/MINIAOD"  ,json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root")
-SingleElectron_Run2016B_17Jul2018_v2 = dict(name = "SingleElectron_Run2016B_17Jul2018_v2",dataset = "/SingleElectron/Run2016B-17Jul2018_ver2-v1/MINIAOD",json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root")
+SingleMuon_Run2016B_17Jul2018_v2     = dict(name = "SingleMuon_Run2016B_17Jul2018_v2"    ,dataset = "/SingleMuon/Run2016B-17Jul2018_ver2-v1/MINIAOD"    ,json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root", useAAA=True)
+SinglePhoton_Run2016B_17Jul2018_v2   = dict(name = "SinglePhoton_Run2016B_17Jul2018_v2"  ,dataset = "/SinglePhoton/Run2016B-17Jul2018_ver2-v1/MINIAOD"  ,json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root", useAAA=True)
+SingleElectron_Run2016B_17Jul2018_v2 = dict(name = "SingleElectron_Run2016B_17Jul2018_v2",dataset = "/SingleElectron/Run2016B-17Jul2018_ver2-v1/MINIAOD",json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root", useAAA=True)
 
 
 componentList_Run2016B_17Jul2018_v2 = [
@@ -61,9 +61,9 @@ componentList_Run2016B_17Jul2018_v2 = [
 ##__________________________________________________________________||
 ## Run2016C
 
-SingleMuon_Run2016C_17Jul2018_v1 = dict(name = "SingleMuon_Run2016C_17Jul2018_v1" ,dataset = "/SingleMuon/Run2016C-17Jul2018-v1/MINIAOD"    ,json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root")
-SinglePhoton_Run2016C_17Jul2018_v1 = dict(name = "SinglePhoton_Run2016C_17Jul2018_v1" ,dataset = "/SinglePhoton/Run2016C-17Jul2018-v1/MINIAOD"  ,json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root")
-SingleElectron_Run2016C_17Jul2018_v1 = dict(name = "SingleElectron_Run2016C_17Jul2018_v1",dataset = "/SingleElectron/Run2016C-17Jul2018-v1/MINIAOD",json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root")
+SingleMuon_Run2016C_17Jul2018_v1 = dict(name = "SingleMuon_Run2016C_17Jul2018_v1" ,dataset = "/SingleMuon/Run2016C-17Jul2018-v1/MINIAOD"    ,json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root", useAAA=True)
+SinglePhoton_Run2016C_17Jul2018_v1 = dict(name = "SinglePhoton_Run2016C_17Jul2018_v1" ,dataset = "/SinglePhoton/Run2016C-17Jul2018-v1/MINIAOD"  ,json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root", useAAA=True)
+SingleElectron_Run2016C_17Jul2018_v1 = dict(name = "SingleElectron_Run2016C_17Jul2018_v1",dataset = "/SingleElectron/Run2016C-17Jul2018-v1/MINIAOD",json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root", useAAA=True)
 
 componentList_Run2016C_17Jul2018_v1 = [
         SingleElectron_Run2016C_17Jul2018_v1,
@@ -74,9 +74,9 @@ componentList_Run2016C_17Jul2018_v1 = [
 ##__________________________________________________________________||
 ## Run2016D
 
-SingleMuon_Run2016D_17Jul2018_v1 = dict(name = "SingleMuon_Run2016D_17Jul2018_v1" ,dataset = "/SingleMuon/Run2016D-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root")
-SinglePhoton_Run2016D_17Jul2018_v1 = dict(name = "SinglePhoton_Run2016D_17Jul2018_v1" ,dataset = "/SinglePhoton/Run2016D-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root")
-SingleElectron_Run2016D_17Jul2018_v1 = dict(name = "SingleElectron_Run2016D_17Jul2018_v1" ,dataset = "/SingleElectron/Run2016D-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root")
+SingleMuon_Run2016D_17Jul2018_v1 = dict(name = "SingleMuon_Run2016D_17Jul2018_v1" ,dataset = "/SingleMuon/Run2016D-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root", useAAA=True)
+SinglePhoton_Run2016D_17Jul2018_v1 = dict(name = "SinglePhoton_Run2016D_17Jul2018_v1" ,dataset = "/SinglePhoton/Run2016D-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root", useAAA=True)
+SingleElectron_Run2016D_17Jul2018_v1 = dict(name = "SingleElectron_Run2016D_17Jul2018_v1" ,dataset = "/SingleElectron/Run2016D-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root", useAAA=True)
 
 
 componentList_Run2016D_17Jul2018_v1 = [
@@ -89,9 +89,9 @@ componentList_Run2016D_17Jul2018_v1 = [
 ##__________________________________________________________________||
 ## Run2016E
 
-SingleMuon_Run2016E_17Jul2018_v1 = dict(name = "SingleMuon_Run2016E_17Jul2018_v1" ,dataset = "/SingleMuon/Run2016E-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root")
-SinglePhoton_Run2016E_17Jul2018_v1 = dict(name = "SinglePhoton_Run2016E_17Jul2018_v1" ,dataset = "/SinglePhoton/Run2016E-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root")
-SingleElectron_Run2016E_17Jul2018_v1 = dict(name = "SingleElectron_Run2016E_17Jul2018_v1" ,dataset = "/SingleElectron/Run2016E-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root")
+SingleMuon_Run2016E_17Jul2018_v1 = dict(name = "SingleMuon_Run2016E_17Jul2018_v1" ,dataset = "/SingleMuon/Run2016E-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root", useAAA=True)
+SinglePhoton_Run2016E_17Jul2018_v1 = dict(name = "SinglePhoton_Run2016E_17Jul2018_v1" ,dataset = "/SinglePhoton/Run2016E-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root", useAAA=True)
+SingleElectron_Run2016E_17Jul2018_v1 = dict(name = "SingleElectron_Run2016E_17Jul2018_v1" ,dataset = "/SingleElectron/Run2016E-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root", useAAA=True)
 
 
 componentList_Run2016E_17Jul2018_v1 = [
@@ -104,9 +104,9 @@ componentList_Run2016E_17Jul2018_v1 = [
 ##__________________________________________________________________||
 ## Run2016F
 
-SingleMuon_Run2016F_17Jul2018_v1  = dict(name = "SingleMuon_Run2016F_17Jul2018_v1" ,dataset = "/SingleMuon/Run2016F-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root")
-SinglePhoton_Run2016F_17Jul2018_v1 = dict(name = "SinglePhoton_Run2016F_17Jul2018_v1" ,dataset = "/SinglePhoton/Run2016F-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root")
-SingleElectron_Run2016F_17Jul2018_v1 = dict(name = "SingleElectron_Run2016F_17Jul2018_v1" ,dataset = "/SingleElectron/Run2016F-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root")
+SingleMuon_Run2016F_17Jul2018_v1  = dict(name = "SingleMuon_Run2016F_17Jul2018_v1" ,dataset = "/SingleMuon/Run2016F-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root", useAAA=True)
+SinglePhoton_Run2016F_17Jul2018_v1 = dict(name = "SinglePhoton_Run2016F_17Jul2018_v1" ,dataset = "/SinglePhoton/Run2016F-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root", useAAA=True)
+SingleElectron_Run2016F_17Jul2018_v1 = dict(name = "SingleElectron_Run2016F_17Jul2018_v1" ,dataset = "/SingleElectron/Run2016F-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root", useAAA=True)
 
 
 componentList_Run2016F_17Jul2018_v1 = [
@@ -119,9 +119,9 @@ componentList_Run2016F_17Jul2018_v1 = [
 ##__________________________________________________________________||
 ## Run2016G
 
-SingleMuon_Run2016G_17Jul2018_v1 = dict(name = "SingleMuon_Run2016G_17Jul2018_v1" ,dataset = "/SingleMuon/Run2016G-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root")
-SinglePhoton_Run2016G_17Jul2018_v1 = dict(name = "SinglePhoton_Run2016G_17Jul2018_v1" ,dataset = "/SinglePhoton/Run2016G-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root")
-SingleElectron_Run2016G_17Jul2018_v1 = dict(name = "SingleElectron_Run2016G_17Jul2018_v1" ,dataset = "/SingleElectron/Run2016G-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root")
+SingleMuon_Run2016G_17Jul2018_v1 = dict(name = "SingleMuon_Run2016G_17Jul2018_v1" ,dataset = "/SingleMuon/Run2016G-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root", useAAA=True)
+SinglePhoton_Run2016G_17Jul2018_v1 = dict(name = "SinglePhoton_Run2016G_17Jul2018_v1" ,dataset = "/SinglePhoton/Run2016G-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root", useAAA=True)
+SingleElectron_Run2016G_17Jul2018_v1 = dict(name = "SingleElectron_Run2016G_17Jul2018_v1" ,dataset = "/SingleElectron/Run2016G-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root", useAAA=True)
 
 
 componentList_Run2016G_17Jul2018_v1 = [
@@ -134,9 +134,9 @@ componentList_Run2016G_17Jul2018_v1 = [
 ##__________________________________________________________________||
 ## Run2016H
 
-SingleMuon_Run2016H_17Jul2018_v1 = dict(name = "SingleMuon_Run2016H_17Jul2018_v1" ,dataset = "/SingleMuon/Run2016H-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root")
-SinglePhoton_Run2016H_17Jul2018_v1 = dict(name = "SinglePhoton_Run2016H_17Jul2018_v1" ,dataset = "/SinglePhoton/Run2016H-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root")
-SingleElectron_Run2016H_17Jul2018_v1 = dict(name = "SingleElectron_Run2016H_17Jul2018_v1" ,dataset = "/SingleElectron/Run2016H-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root")
+SingleMuon_Run2016H_17Jul2018_v1 = dict(name = "SingleMuon_Run2016H_17Jul2018_v1" ,dataset = "/SingleMuon/Run2016H-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleMuon , user = "CMS" , pattern =".*root", useAAA=True)
+SinglePhoton_Run2016H_17Jul2018_v1 = dict(name = "SinglePhoton_Run2016H_17Jul2018_v1" ,dataset = "/SinglePhoton/Run2016H-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SinglePhoton , user = "CMS" , pattern =".*root", useAAA=True)
+SingleElectron_Run2016H_17Jul2018_v1 = dict(name = "SingleElectron_Run2016H_17Jul2018_v1" ,dataset = "/SingleElectron/Run2016H-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root", useAAA=True)
 
 componentList_Run2016H_17Jul2018_v1 = [
         SingleElectron_Run2016H_17Jul2018_v1,
