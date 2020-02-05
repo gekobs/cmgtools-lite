@@ -14,9 +14,9 @@ componentList = []
 # componentList.extend(cmps.componentList_TTJets)
 # componentList.extend(cmps.componentList_SingleTop)
 # componentList.extend(cmps.componentList_WJets)
-componentList.extend(cmps.componentList_DYJets)
+# componentList.extend(cmps.componentList_DYJets)
 # componentList.extend(cmps.componentList_DYJets_NJ)
-# componentList.extend(cmps.componentList_GJets)
+componentList.extend(cmps.componentList_GJets)
 # componentList.extend(cmps.componentList_G1Jet)
 # componentList.extend(cmps.componentList_VGamma)
 # componentList.extend(cmps.componentList_QCD)
@@ -31,7 +31,7 @@ kreator = ComponentCreator()
 from PhysicsTools.HeppyCore.framework.heppy_loop import getHeppyOption
 test = getHeppyOption('test')
 if test == "1" : #lite test
-    componentList = [cmps.G1Jet_Pt250to400_amcatnloFXFX_ext2]
+    componentList = [cmps.GJets_Pt250to400_sherpaOpenLoops]
     components = [kreator.makeMCComponent(**s) for s in componentList]
     for comp in components:
         comp.files = comp.files[0:1]

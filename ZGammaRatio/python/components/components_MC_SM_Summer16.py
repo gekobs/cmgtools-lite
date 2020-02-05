@@ -990,24 +990,24 @@ componentList_G1Jet = [
 
 componentList_GJets = [
 
-    GJets_HT40to100_madgraphMLM,
-    GJets_HT40to100_madgraphMLM_ext1,
-    GJets_HT100to200_madgraphMLM,
-    GJets_HT100to200_madgraphMLM_ext1,
-    GJets_HT200to400_madgraphMLM,
-    GJets_HT200to400_madgraphMLM_ext1,
-    GJets_HT400to600_madgraphMLM,
-    GJets_HT400to600_madgraphMLM_ext1,
-    GJets_HT600toInf_madgraphMLM,
-    GJets_HT600toInf_madgraphMLM_ext1,
-    ###
-    GJets_Pt20to100_sherpa,
-    GJets_Pt100to200_sherpa,
-    GJets_Pt200to500_sherpa,
-    GJets_Pt500to1000_sherpa,
-    GJets_Pt1000to2000_sherpa,
-    GJets_Pt2000to5000_sherpa,
-    ###
+    # GJets_HT40to100_madgraphMLM,
+    # GJets_HT40to100_madgraphMLM_ext1,
+    # GJets_HT100to200_madgraphMLM,
+    # GJets_HT100to200_madgraphMLM_ext1,
+    # GJets_HT200to400_madgraphMLM,
+    # GJets_HT200to400_madgraphMLM_ext1,
+    # GJets_HT400to600_madgraphMLM,
+    # GJets_HT400to600_madgraphMLM_ext1,
+    # GJets_HT600toInf_madgraphMLM,
+    # GJets_HT600toInf_madgraphMLM_ext1,
+    # ###
+    # GJets_Pt20to100_sherpa,
+    # GJets_Pt100to200_sherpa,
+    # GJets_Pt200to500_sherpa,
+    # GJets_Pt500to1000_sherpa,
+    # GJets_Pt1000to2000_sherpa,
+    # GJets_Pt2000to5000_sherpa,
+    # ###
     GJets_Pt5to50_sherpaOpenLoops,
     GJets_Pt50to100_sherpaOpenLoops,
     GJets_Pt100to250_sherpaOpenLoops,
