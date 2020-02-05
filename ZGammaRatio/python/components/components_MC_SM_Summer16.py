@@ -4,19 +4,19 @@
 
 # Inclusive LO
 DYJetsToLL_M50_madgraphMLM_herwigpp = dict(
-name = "DYJetsToLL_M50_madgraphMLM",
+name = "DYJetsToLL_M50_madgraphMLM_herwigpp",
 dataset="/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-herwigpp_30M/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
 user = "CMS", pattern = ".*root",
 )
 
 DYJetsToLL_M50_madgraphMLM_ext1 = dict(
-name = "DYJetsToLL_M50_madgraphMLM",
+name = "DYJetsToLL_M50_madgraphMLM_ext1",
 dataset="/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext1-v2/MINIAODSIM",
 user = "CMS", pattern = ".*root",
 )
 
 DYJetsToLL_M50_madgraphMLM_ext2 = dict(
-name = "DYJetsToLL_M50_madgraphMLM",
+name = "DYJetsToLL_M50_madgraphMLM_ext2",
 dataset = "/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext2-v2/MINIAODSIM",
 user = "CMS", pattern = ".*root",
 )
@@ -209,6 +209,43 @@ user = "CMS", pattern = ".*root",
 
 ##____________________________________________________________________________||
 ## GJets
+
+#GJets Sherpa NLO
+GJets_Pt5to50_sherpaOpenLoops = dict (
+name = "GJets_Pt5to50_sherpaOpenLoops",
+dataset = "/GJets_Pt-5To50_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
+
+GJets_Pt50to100_sherpaOpenLoops = dict (
+name = "GJets_Pt50to100_sherpaOpenLoops",
+dataset = "/GJets_Pt-50To100_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
+
+GJets_Pt100to250_sherpaOpenLoops = dict (
+name = "GJets_Pt100to250_sherpaOpenLoops",
+dataset = "/GJets_Pt-100To250_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
+
+GJets_Pt250to400_sherpaOpenLoops = dict (
+name = "GJets_Pt250to400_sherpaOpenLoops",
+dataset = "/GJets_Pt-250To400_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
+
+# GJets_Pt400to650_sherpaOpenLoops = dict (
+# name = "GJets_Pt400to650_sherpaOpenLoops",
+# dataset = "/GJets_Pt-400To650_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+# user = "CMS", pattern = ".*root",
+# )
+
+GJets_Pt650toInf_sherpaOpenLoops = dict (
+name = "GJets_Pt650toInf_sherpaOpenLoops",
+dataset = "/GJets_Pt-650ToInf_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 
 #G1Jet NLO Pt bins
 G1Jet_Pt50to100_amcatnloFXFX = dict (
@@ -895,33 +932,33 @@ componentList_DYJets = [
     DYJetsToLL_M50_madgraphMLM_herwigpp,
     DYJetsToLL_M50_madgraphMLM_ext1,
     DYJetsToLL_M50_madgraphMLM_ext2,
-    # LO HT
-    DYJetsToLL_HT70to100_madgraphMLM,
-    DYJetsToLL_HT100to200_madgraphMLM,
-    DYJetsToLL_HT100to200_madgraphMLM_ext1,
-    DYJetsToLL_HT200to400_madgraphMLM,
-    DYJetsToLL_HT200to400_madgraphMLM_ext1,
-    DYJetsToLL_HT400to600_madgraphMLM,
-    DYJetsToLL_HT400to600_madgraphMLM_ext1,
+    # # LO HT
+    # DYJetsToLL_HT70to100_madgraphMLM,
+    # DYJetsToLL_HT100to200_madgraphMLM,
+    # DYJetsToLL_HT100to200_madgraphMLM_ext1,
+    # DYJetsToLL_HT200to400_madgraphMLM,
+    # DYJetsToLL_HT200to400_madgraphMLM_ext1,
+    # DYJetsToLL_HT400to600_madgraphMLM,
+    # DYJetsToLL_HT400to600_madgraphMLM_ext1,
     # NLO inclusive
-    DYJetsToLL_M50_amcatnloFXFX,
+    # DYJetsToLL_M50_amcatnloFXFX,
     # NLO Pt bins
-    DYJetsToLL_Zpt50to100_amcatnloFXFX,
-    DYJetsToLL_Zpt50to100_amcatnloFXFX_ext3,
-    DYJetsToLL_Zpt100to250_amcatnloFXFX,
-    DYJetsToLL_Zpt100to250_amcatnloFXFX_ext1,
-    DYJetsToLL_Zpt100to250_amcatnloFXFX_ext2,
-    DYJetsToLL_Zpt100to250_amcatnloFXFX,
-    DYJetsToLL_Zpt250to400_amcatnloFXFX,
-    DYJetsToLL_Zpt250to400_amcatnloFXFX_ext1,
-    DYJetsToLL_Zpt250to400_amcatnloFXFX_ext2,
-    DYJetsToLL_Zpt250to400_amcatnloFXFX,
-    DYJetsToLL_Zpt400to650_amcatnloFXFX,
-    DYJetsToLL_Zpt400to650_amcatnloFXFX_ext1,
-    DYJetsToLL_Zpt400to650_amcatnloFXFX_ext2,
-    DYJetsToLL_Zpt650toInf_amcatnloFXFX,
-    DYJetsToLL_Zpt650toInf_amcatnloFXFX_ext1,
-    DYJetsToLL_Zpt650toInf_amcatnloFXFX_ext2,
+    # DYJetsToLL_Zpt50to100_amcatnloFXFX,
+    # DYJetsToLL_Zpt50to100_amcatnloFXFX_ext3,
+    # DYJetsToLL_Zpt100to250_amcatnloFXFX,
+    # DYJetsToLL_Zpt100to250_amcatnloFXFX_ext1,
+    # DYJetsToLL_Zpt100to250_amcatnloFXFX_ext2,
+    # DYJetsToLL_Zpt100to250_amcatnloFXFX,
+    # DYJetsToLL_Zpt250to400_amcatnloFXFX,
+    # DYJetsToLL_Zpt250to400_amcatnloFXFX_ext1,
+    # DYJetsToLL_Zpt250to400_amcatnloFXFX_ext2,
+    # DYJetsToLL_Zpt250to400_amcatnloFXFX,
+    # DYJetsToLL_Zpt400to650_amcatnloFXFX,
+    # DYJetsToLL_Zpt400to650_amcatnloFXFX_ext1,
+    # DYJetsToLL_Zpt400to650_amcatnloFXFX_ext2,
+    # DYJetsToLL_Zpt650toInf_amcatnloFXFX,
+    # DYJetsToLL_Zpt650toInf_amcatnloFXFX_ext1,
+    # DYJetsToLL_Zpt650toInf_amcatnloFXFX_ext2,
     ]
 
 componentList_DYJets_NJ = [
@@ -970,6 +1007,13 @@ componentList_GJets = [
     GJets_Pt500to1000_sherpa,
     GJets_Pt1000to2000_sherpa,
     GJets_Pt2000to5000_sherpa,
+    ###
+    GJets_Pt5to50_sherpaOpenLoops,
+    GJets_Pt50to100_sherpaOpenLoops,
+    GJets_Pt100to250_sherpaOpenLoops,
+    GJets_Pt250to400_sherpaOpenLoops,
+    # GJets_Pt400to650_sherpaOpenLoops,
+    GJets_Pt650toInf_sherpaOpenLoops,
     ]
 
 componentList_WJets = [

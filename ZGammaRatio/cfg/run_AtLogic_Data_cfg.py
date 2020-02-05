@@ -31,6 +31,15 @@ componentList.append(cmps.SinglePhoton_Run2016F_17Jul2018_v1)
 componentList.append(cmps.SinglePhoton_Run2016G_17Jul2018_v1)
 componentList.append(cmps.SinglePhoton_Run2016H_17Jul2018_v1)
 
+componentList.append(cmps.SingleMuon_Run2016B_17Jul2018_v1)
+componentList.append(cmps.SingleMuon_Run2016B_17Jul2018_v2)
+componentList.append(cmps.SingleMuon_Run2016C_17Jul2018_v1)
+componentList.append(cmps.SingleMuon_Run2016D_17Jul2018_v1)
+componentList.append(cmps.SingleMuon_Run2016E_17Jul2018_v1)
+componentList.append(cmps.SingleMuon_Run2016F_17Jul2018_v1)
+componentList.append(cmps.SingleMuon_Run2016G_17Jul2018_v1)
+componentList.append(cmps.SingleMuon_Run2016H_17Jul2018_v1)
+
 ##__________________________________________________________________||
 from CMGTools.ZGammaRatio.components.ComponentCreator import ComponentCreator
 kreator = ComponentCreator()
@@ -44,7 +53,7 @@ for comp in components:
 from PhysicsTools.HeppyCore.framework.heppy_loop import getHeppyOption
 test = getHeppyOption('test')
 if test == "1" :
-    componentList = [cmps.SinglePhoton_Run2016H_17Jul2018_v1]
+    componentList = [cmps.SinglePhoton_Run2016H_17Jul2018_v1, cmps.SingleMuon_Run2016H_17Jul2018_v1]
     components = [kreator.makeDataComponent(**s) for s in componentList]
     for comp in components:
         comp.files[:] = comp.files[15:16]

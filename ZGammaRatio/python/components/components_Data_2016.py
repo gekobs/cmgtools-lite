@@ -66,9 +66,9 @@ SinglePhoton_Run2016C_17Jul2018_v1 = dict(name = "SinglePhoton_Run2016C_17Jul201
 SingleElectron_Run2016C_17Jul2018_v1 = dict(name = "SingleElectron_Run2016C_17Jul2018_v1",dataset = "/SingleElectron/Run2016C-17Jul2018-v1/MINIAOD",json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root", useAAA=True)
 
 componentList_Run2016C_17Jul2018_v1 = [
-        SingleElectron_Run2016C_17Jul2018_v1,
         SingleMuon_Run2016C_17Jul2018_v1,
         SinglePhoton_Run2016C_17Jul2018_v1,
+        SingleElectron_Run2016C_17Jul2018_v1,
         ]
 
 ##__________________________________________________________________||
@@ -80,9 +80,9 @@ SingleElectron_Run2016D_17Jul2018_v1 = dict(name = "SingleElectron_Run2016D_17Ju
 
 
 componentList_Run2016D_17Jul2018_v1 = [
-        SingleElectron_Run2016D_17Jul2018_v1,
         SingleMuon_Run2016D_17Jul2018_v1,
         SinglePhoton_Run2016D_17Jul2018_v1,
+        SingleElectron_Run2016D_17Jul2018_v1,
 
         ]
 
@@ -95,9 +95,9 @@ SingleElectron_Run2016E_17Jul2018_v1 = dict(name = "SingleElectron_Run2016E_17Ju
 
 
 componentList_Run2016E_17Jul2018_v1 = [
-        SingleElectron_Run2016E_17Jul2018_v1,
         SingleMuon_Run2016E_17Jul2018_v1,
         SinglePhoton_Run2016E_17Jul2018_v1,
+        SingleElectron_Run2016E_17Jul2018_v1,
 
         ]
 
@@ -110,9 +110,9 @@ SingleElectron_Run2016F_17Jul2018_v1 = dict(name = "SingleElectron_Run2016F_17Ju
 
 
 componentList_Run2016F_17Jul2018_v1 = [
-        SingleElectron_Run2016F_17Jul2018_v1,
         SingleMuon_Run2016F_17Jul2018_v1,
         SinglePhoton_Run2016F_17Jul2018_v1,
+        SingleElectron_Run2016F_17Jul2018_v1,
 
         ]
 
@@ -125,9 +125,9 @@ SingleElectron_Run2016G_17Jul2018_v1 = dict(name = "SingleElectron_Run2016G_17Ju
 
 
 componentList_Run2016G_17Jul2018_v1 = [
-        SingleElectron_Run2016G_17Jul2018_v1,
         SingleMuon_Run2016G_17Jul2018_v1,
         SinglePhoton_Run2016G_17Jul2018_v1,
+        SingleElectron_Run2016G_17Jul2018_v1,
       
         ]
 
@@ -139,9 +139,9 @@ SinglePhoton_Run2016H_17Jul2018_v1 = dict(name = "SinglePhoton_Run2016H_17Jul201
 SingleElectron_Run2016H_17Jul2018_v1 = dict(name = "SingleElectron_Run2016H_17Jul2018_v1" ,dataset = "/SingleElectron/Run2016H-17Jul2018-v1/MINIAOD", json = json_GoldenReReco, jsonFilter = False, run_range = None, triggers = triggers_SingleElectron , user = "CMS" , pattern =".*root", useAAA=True)
 
 componentList_Run2016H_17Jul2018_v1 = [
-        SingleElectron_Run2016H_17Jul2018_v1,
         SingleMuon_Run2016H_17Jul2018_v1,
         SinglePhoton_Run2016H_17Jul2018_v1,
+        SingleElectron_Run2016H_17Jul2018_v1,
         ]
 
 ##__________________________________________________________________||
