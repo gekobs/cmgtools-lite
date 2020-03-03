@@ -190,6 +190,23 @@ dataset = "/DYToLL_2J_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMorion
 user = "CMS", pattern = ".*root",
 )
 
+# Sherpa NLO EWK
+DYJetsToee_Pt0toInf_sherpa = dict(
+name = "DYJetsToee_Pt0toInf_sherpa",
+dataset = "/DYjetstoee_01234jets_Pt-0ToInf_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_QCDEWNLO_correct_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
+DYJetsTomumu_Pt0toInf_sherpa = dict(
+name = "DYJetsTomumu_Pt0toInf_sherpa",
+dataset = "/DYjetstomumu_01234jets_Pt-0ToInf_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_QCDEWNLO_correct_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
+DYJetsTotautau_Pt0toInf_sherpa = dict(
+name = "DYJetsTotautau_Pt0toInf_sherpa",
+dataset = "/DYjetstotautau_01234jets_Pt-0ToInf_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_QCDEWNLO_correct_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
+
 ##____________________________________________________________________________||
 ## EWK DY2Jets
 
@@ -225,7 +242,7 @@ user = "CMS", pattern = ".*root",
 
 GJets_Pt100to250_sherpaOpenLoops = dict (
 name = "GJets_Pt100to250_sherpaOpenLoops",
-dataset = "/GJets_Pt-100To250_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+dataset = "/GJets_Pt-100To250_13TeV_sherpa/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
 user = "CMS", pattern = ".*root",
 )
 
@@ -681,77 +698,77 @@ user = "CMS", pattern = ".*root",
 
 # WJets inclusive NLO
 WJetsToLNu_amcatnloFXFX = dict(
-    name = "WJetsToLNu_amcatnloFXFX",
-    dataset = "/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
-    user = "CMS", pattern = ".*root",
-    )
+name = "WJetsToLNu_amcatnloFXFX",
+dataset = "/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 
 WJetsToLNu_amcatnloFXFX_ext2 = dict(
-    name = "WJetsToLNu_amcatnloFXFX_ext2",
-    dataset = "/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext2-v1/MINIAODSIM",
-    user = "CMS", pattern = ".*root",
-    )
+name = "WJetsToLNu_amcatnloFXFX_ext2",
+dataset = "/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext2-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 
 # WJets Pt bins NLO
 WJetsToLNu_Wpt100to250_amcatnloFXFX = dict(
-    name = "WJetsToLNu_Wpt100to250_amcatnloFXFX",
-    dataset = "/WJetsToLNu_Pt-100To250_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v2/MINIAODSIM",
-    user = "CMS", pattern = ".*root",
-    )
+name = "WJetsToLNu_Wpt100to250_amcatnloFXFX",
+dataset = "/WJetsToLNu_Pt-100To250_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v2/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 
 WJetsToLNu_Wpt100to250_amcatnloFXFX_ext1 = dict(
-    name = "WJetsToLNu_Wpt100to250_amcatnloFXFX_ext1",
-    dataset = "/WJetsToLNu_Pt-100To250_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext1-v2/MINIAODSIM",
-    user = "CMS", pattern = ".*root",
-    )
+name = "WJetsToLNu_Wpt100to250_amcatnloFXFX_ext1",
+dataset = "/WJetsToLNu_Pt-100To250_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext1-v2/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 
 WJetsToLNu_Wpt100to250_amcatnloFXFX_ext4 = dict(
-    name = "WJetsToLNu_Wpt100to250_amcatnloFXFX_ext4",
-    dataset = "/WJetsToLNu_Pt-100To250_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext4-v2/MINIAODSIM",
-    user = "CMS", pattern = ".*root",
-    )
+name = "WJetsToLNu_Wpt100to250_amcatnloFXFX_ext4",
+dataset = "/WJetsToLNu_Pt-100To250_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext4-v2/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 
 WJetsToLNu_Wpt250to400_amcatnloFXFX = dict(
-    name = "WJetsToLNu_Wpt250to400_amcatnloFXFX",
-    dataset = "/WJetsToLNu_Pt-250To400_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v2/MINIAODSIM",
-    user = "CMS", pattern = ".*root",
-    )
+name = "WJetsToLNu_Wpt250to400_amcatnloFXFX",
+dataset = "/WJetsToLNu_Pt-250To400_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v2/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 
 WJetsToLNu_Wpt250to400_amcatnloFXFX_ext1 = dict(
-    name = "WJetsToLNu_Wpt250to400_amcatnloFXFX_ext1",
-    dataset = "/WJetsToLNu_Pt-250To400_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext1-v1/MINIAODSIM",
-    user = "CMS", pattern = ".*root",
-    )
+name = "WJetsToLNu_Wpt250to400_amcatnloFXFX_ext1",
+dataset = "/WJetsToLNu_Pt-250To400_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext1-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 
 WJetsToLNu_Wpt250to400_amcatnloFXFX_ext4 = dict(
-    name = "WJetsToLNu_Wpt250to400_amcatnloFXFX_ext4",
-    dataset = "/WJetsToLNu_Pt-250To400_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext4-v2/MINIAODSIM",
-    user = "CMS", pattern = ".*root",
-    )
+name = "WJetsToLNu_Wpt250to400_amcatnloFXFX_ext4",
+dataset = "/WJetsToLNu_Pt-250To400_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext4-v2/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 
 WJetsToLNu_Wpt400to600_amcatnloFXFX = dict(
-    name = "WJetsToLNu_Wpt400to600_amcatnloFXFX",
-    dataset = "/WJetsToLNu_Pt-400To600_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v2/MINIAODSIM",
-    user = "CMS", pattern = ".*root",
-    )
+name = "WJetsToLNu_Wpt400to600_amcatnloFXFX",
+dataset = "/WJetsToLNu_Pt-400To600_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v2/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 
 WJetsToLNu_Wpt400to600_amcatnloFXFX_ext1 = dict(
-    name = "WJetsToLNu_Wpt400to600_amcatnloFXFX_ext1",
-    dataset = "/WJetsToLNu_Pt-400To600_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext1-v2/MINIAODSIM",
-    user = "CMS", pattern = ".*root",
-    )
+name = "WJetsToLNu_Wpt400to600_amcatnloFXFX_ext1",
+dataset = "/WJetsToLNu_Pt-400To600_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext1-v2/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 
 WJetsToLNu_Wpt600toInf_amcatnloFXFX = dict(
-    name = "WJetsToLNu_Wpt600toInf_amcatnloFXFX",
-    dataset = "/WJetsToLNu_Pt-600ToInf_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v2/MINIAODSIM",
-    user = "CMS", pattern = ".*root",
-    )
+name = "WJetsToLNu_Wpt600toInf_amcatnloFXFX",
+dataset = "/WJetsToLNu_Pt-600ToInf_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v2/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 
 WJetsToLNu_Wpt600toInf_amcatnloFXFX_ext1 = dict(
-    name = "WJetsToLNu_Wpt600toInf_amcatnloFXFX_ext1",
-    dataset = "/WJetsToLNu_Pt-600ToInf_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext1-v2/MINIAODSIM",
-    user = "CMS", pattern = ".*root",
-    )
+name = "WJetsToLNu_Wpt600toInf_amcatnloFXFX_ext1",
+dataset = "/WJetsToLNu_Pt-600ToInf_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext1-v2/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 
 ##____________________________________________________________________________||
 ## Diboson
@@ -933,32 +950,32 @@ componentList_DYJets = [
     DYJetsToLL_M50_madgraphMLM_ext1,
     DYJetsToLL_M50_madgraphMLM_ext2,
     # # LO HT
-    # DYJetsToLL_HT70to100_madgraphMLM,
-    # DYJetsToLL_HT100to200_madgraphMLM,
-    # DYJetsToLL_HT100to200_madgraphMLM_ext1,
-    # DYJetsToLL_HT200to400_madgraphMLM,
-    # DYJetsToLL_HT200to400_madgraphMLM_ext1,
-    # DYJetsToLL_HT400to600_madgraphMLM,
-    # DYJetsToLL_HT400to600_madgraphMLM_ext1,
+    DYJetsToLL_HT70to100_madgraphMLM,
+    DYJetsToLL_HT100to200_madgraphMLM,
+    DYJetsToLL_HT100to200_madgraphMLM_ext1,
+    DYJetsToLL_HT200to400_madgraphMLM,
+    DYJetsToLL_HT200to400_madgraphMLM_ext1,
+    DYJetsToLL_HT400to600_madgraphMLM,
+    DYJetsToLL_HT400to600_madgraphMLM_ext1,
     # NLO inclusive
-    # DYJetsToLL_M50_amcatnloFXFX,
+    DYJetsToLL_M50_amcatnloFXFX,
     # NLO Pt bins
-    # DYJetsToLL_Zpt50to100_amcatnloFXFX,
-    # DYJetsToLL_Zpt50to100_amcatnloFXFX_ext3,
-    # DYJetsToLL_Zpt100to250_amcatnloFXFX,
-    # DYJetsToLL_Zpt100to250_amcatnloFXFX_ext1,
-    # DYJetsToLL_Zpt100to250_amcatnloFXFX_ext2,
-    # DYJetsToLL_Zpt100to250_amcatnloFXFX,
-    # DYJetsToLL_Zpt250to400_amcatnloFXFX,
-    # DYJetsToLL_Zpt250to400_amcatnloFXFX_ext1,
-    # DYJetsToLL_Zpt250to400_amcatnloFXFX_ext2,
-    # DYJetsToLL_Zpt250to400_amcatnloFXFX,
-    # DYJetsToLL_Zpt400to650_amcatnloFXFX,
-    # DYJetsToLL_Zpt400to650_amcatnloFXFX_ext1,
-    # DYJetsToLL_Zpt400to650_amcatnloFXFX_ext2,
-    # DYJetsToLL_Zpt650toInf_amcatnloFXFX,
-    # DYJetsToLL_Zpt650toInf_amcatnloFXFX_ext1,
-    # DYJetsToLL_Zpt650toInf_amcatnloFXFX_ext2,
+    DYJetsToLL_Zpt50to100_amcatnloFXFX,
+    DYJetsToLL_Zpt50to100_amcatnloFXFX_ext3,
+    DYJetsToLL_Zpt100to250_amcatnloFXFX,
+    DYJetsToLL_Zpt100to250_amcatnloFXFX_ext1,
+    DYJetsToLL_Zpt100to250_amcatnloFXFX_ext2,
+    DYJetsToLL_Zpt100to250_amcatnloFXFX,
+    DYJetsToLL_Zpt250to400_amcatnloFXFX,
+    DYJetsToLL_Zpt250to400_amcatnloFXFX_ext1,
+    DYJetsToLL_Zpt250to400_amcatnloFXFX_ext2,
+    DYJetsToLL_Zpt250to400_amcatnloFXFX,
+    DYJetsToLL_Zpt400to650_amcatnloFXFX,
+    DYJetsToLL_Zpt400to650_amcatnloFXFX_ext1,
+    DYJetsToLL_Zpt400to650_amcatnloFXFX_ext2,
+    DYJetsToLL_Zpt650toInf_amcatnloFXFX,
+    DYJetsToLL_Zpt650toInf_amcatnloFXFX_ext1,
+    DYJetsToLL_Zpt650toInf_amcatnloFXFX_ext2,
     ]
 
 componentList_DYJets_NJ = [
@@ -967,6 +984,13 @@ componentList_DYJets_NJ = [
     DYToLL_2J_amcatnloFXFX,
     DYToLL_2J_amcatnloFXFX_ext1,
     ]
+
+componentList_DYJets_sherpa = [
+    DYJetsToee_Pt0toInf_sherpa,
+    DYJetsTomumu_Pt0toInf_sherpa,
+    DYJetsTotautau_Pt0toInf_sherpa,
+    ]
+
 
 componentList_EWKV2Jets = [
     EWK_LLJJ_madgraph,
@@ -1009,17 +1033,17 @@ componentList_GJets = [
     # GJets_Pt2000to5000_sherpa,
     # ###
     GJets_Pt5to50_sherpaOpenLoops,
-    GJets_Pt50to100_sherpaOpenLoops,
-    GJets_Pt100to250_sherpaOpenLoops,
-    GJets_Pt250to400_sherpaOpenLoops,
+    # GJets_Pt50to100_sherpaOpenLoops,
+    # GJets_Pt100to250_sherpaOpenLoops,
+    # GJets_Pt250to400_sherpaOpenLoops,
     # GJets_Pt400to650_sherpaOpenLoops,
-    GJets_Pt650toInf_sherpaOpenLoops,
+    # GJets_Pt650toInf_sherpaOpenLoops,
     ]
 
 componentList_WJets = [
     WJetsToLNu_amcatnloFXFX,
     # WJetsToLNu_Wpt0to50_amcatnloFXFX,
-    # WJetsToLNu_Wpt50to100_amcatnloFXFX, #!! 94X doesn't have low pt samples FFS!
+    # WJetsToLNu_Wpt50to100_amcatnloFXFX, #!! 94X doesn't have low pt samples!
     WJetsToLNu_Wpt100to250_amcatnloFXFX,
     WJetsToLNu_Wpt100to250_amcatnloFXFX_ext1,
     WJetsToLNu_Wpt100to250_amcatnloFXFX_ext4,
@@ -1129,6 +1153,8 @@ if __name__ == "__main__":
     componentList.extend(componentList_SingleTop)
     componentList.extend(componentList_WJets)
     componentList.extend(componentList_DYJets)
+    componentList.extend(componentList_DYJets_NJ)
+    componentList.extend(componentList_DYJets_sherpa)
     componentList.extend(componentList_GJets)
     componentList.extend(componentList_G1Jet)
     componentList.extend(componentList_VGamma)

@@ -153,7 +153,7 @@ class CMSDataset( BaseDataset ):
                 print "WARNING: queries with run ranges are slow in DAS"
                 query += "   run between [%s,%s]" % ( run_range[0],run_range[1] )
         else:
-            query += "  status=VALID" # status doesn't interact well with run range
+            query += " status=* " # status doesn't interact well with run range
         if self.dbsInstance != None:
             query += "  instance=prod/%s" % self.dbsInstance
         dbs='dasgoclient --json --query="file %s=%s"'%(qwhat,query) # files must be valid
