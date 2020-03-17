@@ -93,7 +93,7 @@ genHFAna = cfg.Analyzer(
 ##____________________________________________________________________________||
 ## PDFWeightsAnalyzer
 # PDFWeights = []
-PDFWeights = [("CT10",53), ("MSTW2008lo68cl",41), ("NNPDF21_100",101)]
+PDFWeights = [("CT10",53), ("MSTW2008lo68cl",41), ("NNPDF31_nnlo_pch_as_0118_mc",101)]
 
 pdfwAna = cfg.Analyzer(
     PDFWeightsAnalyzer, name="pdfWeightsAnalyzer",
@@ -708,23 +708,23 @@ def buildSequence(datamc, scribbler_options, buildEventSelection_options,
     atEventSelection.function = buildEventSelection(**buildEventSelection_options)
 
     sequence = [
-        skimAna,
-        jsonAna,
-        triggerAna,
+        # skimAna,
+        # jsonAna,
+        # triggerAna,
         vertexAna,
-        atnVertCounter,
-        pileUpAna,
+        # atnVertCounter,
+        # pileUpAna,
         lheWeightAna,
         lheAna,
         genAna,
-        # genHFAna,
+        genHFAna,
         pdfwAna,
-        # lepAna,
+        lepAna,
         #ttHLepSkim,
-        # photonAna,
+        photonAna,
         # tauAna,
         # isoTrackAna,
-        # jetAna,
+        jetAna,
         # metAna,
         # ttHCoreEventAna,
         # triggerFlagsAna,
@@ -750,10 +750,10 @@ def buildSequence(datamc, scribbler_options, buildEventSelection_options,
         #AtSubJetAna,
         # HbheAnalyzer,
         ###
-        atEventAttributesPrep,
-        atScribblers,
-        atEventSelection,
-        atEventAttributesPost,
+        # atEventAttributesPrep,
+        # atScribblers,
+        # atEventSelection,
+        # atEventAttributesPost,
         ###
         treeProducer,
         ]
