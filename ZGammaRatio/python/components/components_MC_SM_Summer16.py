@@ -945,21 +945,21 @@ user = "CMS", pattern = ".*root",
 ## ComponentLists
 
 componentList_DYJets = [
-    # LO inclusive
-    DYJetsToLL_M50_madgraphMLM_herwigpp,
-    DYJetsToLL_M50_madgraphMLM_ext1,
-    DYJetsToLL_M50_madgraphMLM_ext2,
+    # # LO inclusive
+    # DYJetsToLL_M50_madgraphMLM_herwigpp,
+    # DYJetsToLL_M50_madgraphMLM_ext1,
+    # DYJetsToLL_M50_madgraphMLM_ext2,
     # # LO HT
-    DYJetsToLL_HT70to100_madgraphMLM,
-    DYJetsToLL_HT100to200_madgraphMLM,
-    DYJetsToLL_HT100to200_madgraphMLM_ext1,
-    DYJetsToLL_HT200to400_madgraphMLM,
-    DYJetsToLL_HT200to400_madgraphMLM_ext1,
-    DYJetsToLL_HT400to600_madgraphMLM,
-    DYJetsToLL_HT400to600_madgraphMLM_ext1,
-    # NLO inclusive
+    # DYJetsToLL_HT70to100_madgraphMLM,
+    # DYJetsToLL_HT100to200_madgraphMLM,
+    # DYJetsToLL_HT100to200_madgraphMLM_ext1,
+    # DYJetsToLL_HT200to400_madgraphMLM,
+    # DYJetsToLL_HT200to400_madgraphMLM_ext1,
+    # DYJetsToLL_HT400to600_madgraphMLM,
+    # DYJetsToLL_HT400to600_madgraphMLM_ext1,
+    # # NLO inclusive
     DYJetsToLL_M50_amcatnloFXFX,
-    # NLO Pt bins
+    # # NLO Pt bins
     DYJetsToLL_Zpt50to100_amcatnloFXFX,
     DYJetsToLL_Zpt50to100_amcatnloFXFX_ext3,
     DYJetsToLL_Zpt100to250_amcatnloFXFX,
