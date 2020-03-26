@@ -92,13 +92,12 @@ genHFAna = cfg.Analyzer(
 
 ##____________________________________________________________________________||
 ## PDFWeightsAnalyzer
-# PDFWeights = []
-PDFWeights = [("CT10",53), ("MSTW2008lo68cl",41), ("NNPDF31_nnlo_pch_as_0118_mc",101)]
+PDFWeights = []
+#PDFWeights = [("CT10",53), ("MSTW2008lo68cl",41), ("NNPDF21_100",101)]
 
 pdfwAna = cfg.Analyzer(
     PDFWeightsAnalyzer, name="pdfWeightsAnalyzer",
     PDFWeights=[ pdf for pdf,num in PDFWeights ],
-    doPDFVars = True,
     )
 
 ##____________________________________________________________________________||
@@ -708,52 +707,52 @@ def buildSequence(datamc, scribbler_options, buildEventSelection_options,
     atEventSelection.function = buildEventSelection(**buildEventSelection_options)
 
     sequence = [
-        # skimAna,
-        # jsonAna,
-        # triggerAna,
+        skimAna,
+        jsonAna,
+        triggerAna,
         vertexAna,
-        # atnVertCounter,
-        # pileUpAna,
+        atnVertCounter,
+        pileUpAna,
         lheWeightAna,
         lheAna,
         genAna,
-        # genHFAna,
-        # pdfwAna,
+        genHFAna,
+        pdfwAna,
         lepAna,
         #ttHLepSkim,
         photonAna,
-        # tauAna,
-        # isoTrackAna,
+        tauAna,
+        isoTrackAna,
         jetAna,
-        # metAna,
-        # ttHCoreEventAna,
-        # triggerFlagsAna,
-        # eventFlagsAna,
-        # badMuonAna,
-        # badMuonAnaMoriond2017,
-        # badCloneMuonAnaMoriond2017,
-        # badChargedHadronAna,
+        metAna,
+        ttHCoreEventAna,
+        triggerFlagsAna,
+        eventFlagsAna,
+        badMuonAna,
+        badMuonAnaMoriond2017,
+        badCloneMuonAnaMoriond2017,
+        badChargedHadronAna,
         ###
-        # atJetsJECVariations,
-        # atJetsFwdJECVariations,
-        # isoTrackNoMu,
-        # isoTrackNoEle,
-        # isoTrackNoMuEle,
-        # atLheHTnoT,
-        # atLheN,
-        # atLheHTHistogram,
+        atJetsJECVariations,
+        atJetsFwdJECVariations,
+        isoTrackNoMu,
+        isoTrackNoEle,
+        isoTrackNoMuEle,
+        atLheHTnoT,
+        atLheN,
+        atLheHTHistogram,
         ###
-        # atMiscVarsCalculator,
-        # ttHGenBinAna,
+        atMiscVarsCalculator,
+        ttHGenBinAna,
         #AtFatJetAna,
         #atFatJetsJECVariations,
         #AtSubJetAna,
-        # HbheAnalyzer,
+        HbheAnalyzer,
         ###
-        # atEventAttributesPrep,
-        # atScribblers,
-        # atEventSelection,
-        # atEventAttributesPost,
+        atEventAttributesPrep,
+        atScribblers,
+        atEventSelection,
+        atEventAttributesPost,
         ###
         treeProducer,
         ]

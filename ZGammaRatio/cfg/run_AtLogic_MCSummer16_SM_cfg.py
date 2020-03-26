@@ -14,16 +14,27 @@ componentList = []
 # componentList.extend(cmps.componentList_TTJets)
 # componentList.extend(cmps.componentList_SingleTop)
 # componentList.extend(cmps.componentList_WJets)
-componentList.extend(cmps.componentList_DYJets)
+# componentList.extend(cmps.componentList_DYJets)
 # componentList.extend(cmps.componentList_DYJets_NJ)
 # componentList.extend(cmps.componentList_GJets)
 # componentList.extend(cmps.componentList_DYJets_sherpa)
-componentList.extend(cmps.componentList_G1Jet)
+# componentList.extend(cmps.componentList_G1Jet)
 # componentList.extend(cmps.componentList_VGamma)
 # componentList.extend(cmps.componentList_QCD)
 # componentList.extend(cmps.componentList_DiBoson)
 # componentList.extend(cmps.componentList_TTX)
 # componentList.extend(cmps.componentList_EWKV2Jets)
+
+# componentList.append(cmps.G1Jet_Pt250to400_amcatnloFXFX_ext1)
+# componentList.append(cmps.G1Jet_Pt400to650_amcatnloFXFX)
+# componentList.append(cmps.G1Jet_Pt650toInf_amcatnloFXFX)
+# componentList.append(cmps.G1Jet_Pt650toInf_amcatnloFXFX_ext1)
+# componentList.append(cmps.DYJetsToLL_Zpt400to650_amcatnloFXFX_ext2)
+
+componentList.append(cmps.DYJetsToee_Pt0toInf_sherpa_ext1)
+componentList.append(cmps.DYJetsTomumu_Pt0toInf_sherpa_ext1)
+componentList.append(cmps.DYJetsTotautau_Pt0toInf_sherpa_ext1)
+componentList.append(cmps.GJets_Pt400to650_sherpaOpenLoops)
 
 ##__________________________________________________________________||
 from CMGTools.ZGammaRatio.components.ComponentCreator import ComponentCreator
@@ -32,7 +43,12 @@ kreator = ComponentCreator()
 from PhysicsTools.HeppyCore.framework.heppy_loop import getHeppyOption
 test = getHeppyOption('test')
 if test == "1" : #lite test
-    componentList = [cmps.DYJetsToLL_Zpt100to250_amcatnloFXFX]
+    componentList = [
+                     cmps.DYJetsToee_Pt0toInf_sherpa_ext1,
+                     cmps.DYJetsTomumu_Pt0toInf_sherpa_ext1,
+                     cmps.DYJetsTotautau_Pt0toInf_sherpa_ext1,
+                     cmps.GJets_Pt400to650_sherpaOpenLoops,
+                    ]
     components = [kreator.makeMCComponent(**s) for s in componentList]
     for comp in components:
         comp.files = comp.files[0:1]

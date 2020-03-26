@@ -196,14 +196,29 @@ name = "DYJetsToee_Pt0toInf_sherpa",
 dataset = "/DYjetstoee_01234jets_Pt-0ToInf_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_QCDEWNLO_correct_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
 user = "CMS", pattern = ".*root",
 )
+DYJetsToee_Pt0toInf_sherpa_ext1 = dict(
+name = "DYJetsToee_Pt0toInf_sherpa",
+dataset = "/DYjetstoee_01234jets_Pt-0ToInf_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_QCDEWNLO_correct_94X_mcRun2_asymptotic_v3_ext1-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 DYJetsTomumu_Pt0toInf_sherpa = dict(
 name = "DYJetsTomumu_Pt0toInf_sherpa",
 dataset = "/DYjetstomumu_01234jets_Pt-0ToInf_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_QCDEWNLO_correct_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
 user = "CMS", pattern = ".*root",
 )
+DYJetsTomumu_Pt0toInf_sherpa_ext1 = dict(
+name = "DYJetsTomumu_Pt0toInf_sherpa",
+dataset = "/DYjetstomumu_01234jets_Pt-0ToInf_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_QCDEWNLO_correct_94X_mcRun2_asymptotic_v3_ext1-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 DYJetsTotautau_Pt0toInf_sherpa = dict(
 name = "DYJetsTotautau_Pt0toInf_sherpa",
 dataset = "/DYjetstotautau_01234jets_Pt-0ToInf_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_QCDEWNLO_correct_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
+DYJetsTotautau_Pt0toInf_sherpa_ext1 = dict(
+name = "DYJetsTotautau_Pt0toInf_sherpa",
+dataset = "/DYjetstotautau_01234jets_Pt-0ToInf_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_QCDEWNLO_correct_94X_mcRun2_asymptotic_v3_ext1-v1/MINIAODSIM",
 user = "CMS", pattern = ".*root",
 )
 
@@ -252,11 +267,11 @@ dataset = "/GJets_Pt-250To400_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_94
 user = "CMS", pattern = ".*root",
 )
 
-# GJets_Pt400to650_sherpaOpenLoops = dict (
-# name = "GJets_Pt400to650_sherpaOpenLoops",
-# dataset = "/GJets_Pt-400To650_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
-# user = "CMS", pattern = ".*root",
-# )
+GJets_Pt400to650_sherpaOpenLoops = dict (
+name = "GJets_Pt400to650_sherpaOpenLoops",
+dataset = "/GJets_Pt-400To650_13TeV-sherpa/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+user = "CMS", pattern = ".*root",
+)
 
 GJets_Pt650toInf_sherpaOpenLoops = dict (
 name = "GJets_Pt650toInf_sherpaOpenLoops",
